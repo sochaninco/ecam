@@ -39,6 +39,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 
     @section('style')
 
@@ -97,6 +98,7 @@
 
             <!-- jQuery -->
             <script src="{{asset('admin-style/bower_components/jquery/dist/jquery.min.js')}}"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <!-- Bootstrap Core JavaScript -->
             <script src="{{asset('admin-style/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 

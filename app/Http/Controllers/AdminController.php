@@ -46,6 +46,7 @@ use Illuminate\Http\Request;
 use DB;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Log;
 use Response;
 use Illuminate\Support\Facades\Input;
 use Image;
@@ -227,8 +228,10 @@ class AdminController extends Controller
             }elseif($brand != null){
                 $products = ShopProduct::where(['user_id'=>Auth::user()->id],['brand'=>$brand])->paginate(32);
             }
+            
 
         }
+        Log::info($Products);
         $prods = '<div>';
         if (!empty($products)) {
             foreach ($products as $product) {
